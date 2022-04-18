@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+ <html>
+	<head>
+		<!--This is the head section-->
+		<meta charset="utf-8">
+		<title>ITS-200 FINAL</title>
+		<!--We decided to link a CSS file rather than embed it-->
+		<link rel="stylesheet" type="text/CSS" href="final-styles-1.css"/>
+		<!-- Below is the javascript section -->
+		<script type = "text/javascript">
+		
+			
+			// These are the veraibles we made for the math operations, as well as the "userName" variable that for the prompted question
+			 var avgGmLngth, gameCount;
+			 var totalHours;
+			 var dayRel;
+			 var weekCT;
+			 var userName
+			 var userGuess
+			 
+			  //We are asking the user to gusss how many games there are in the series.
+			 userGuess = prompt("Guess how many Assassins Creed games there are:");
+				if (userGuess == 24){
+					alert("Spot on! There are 24 total games in the series.");
+					}
+				if (userGuess != 24){
+					alert("Close! There are 24 games in the series.");
+					}
+				
+				
+			 //Here we used basic math to convert the total number of hours into how many days of gameplay there are.
+			 gameCount = 24; // gameCount refers to how mamy games ther are in the series 
+			 avgGmLngth = 31; //avgGmLngth refers to the average amount of hours of gameplay there are in each of the games
+			 totalHours = gameCount*avgGmLngth; //Multiply the amount of games by the average length of the games to get the rough amount of hours in all the games combined
+			 dayRel = totalHours/24; //Divide the total hours by 24 to convert from hours of gameplay to days of gameplay since 24 hours = 1 day 
+			 userName = prompt ("Please, enter your name:"); //Here we ask for the users name, and it is displayed at the top right of the screen with some fun facts 
+			 
+			 //This chunk of code displays the math from the previous section
+			 document.write ("Fun Fact, ");
+			 document.write (userName);
+			 document.write(": it would take around ");
+			 document.write(totalHours);
+			 document.write(" hours to finish all the games!")
+			 document.write("<br />")
+			 document.write("That's a lot - ");
+			 document.write(" equal to ");
+			 document.write(dayRel);
+			 document.write(" days of nonstop gaming!");
+			 /*This is the end of the JS section */
+			 
+		</script>
+			
+	</head>
+			
+			
+	<body>
+	<!--Here I am using the <div> tag to isolate the 'image' class. I did the same for the "border" class so that it was affected independently of the "body" styles in CSS-->
+		<div>
+			<img src = "Ass-creed.jpg" alt = "Image of Assassins Creed" class = "image">
+	   	</div>
+		
+		<!-- Here is where the "article" about Assassins Creed begins. -->
+		<h1> Facts About <em>Assassins Creed</em> </h1>
+		<hr>
+			<!--This is a quote from the games and is our h2 header-->
+			<h2> <em> "Everything is permitted, Nothing is true.” </em></h2>
+			
+			<!--The first paragraph talks about the game Assassins Creed: Valhalla-->
+			<p class = "Paragraph1">
+			Just as in Origins and Odyssey before it, the modern-day, sci-fi elements of Assassin’s Creed Valhalla’s story take a back seat to the historical stuff, which is this time in England during the 9th Century. Driven from Norway by endless wars and waning assets within the ninth century CE, players will lead Eivor's clan of Norsemen over the frigid North Ocean to the wealthy lands of England's broken kingdoms. Players must carve out a new future for their clan, remembering the heartless battling fashion of Viking warriors with a redone combat framework that incorporates the capacity to dual-wield weapons against a greater assortment of enemies than ever before. 
+			To secure assets players can lead attacks to choose areas utilizing their longship to win much-needed wealth and assets.
+			As the Vikings start to settle in their new domestic, they experience resistance from the Saxons counting Ruler Aelfred of Wessex, who denounces them as pagans and looks to be the sole ruler of a civilized Britain. 
+			Against all changes, Eivor must do what is vital to keep Valhalla inside reach Assassin’s Creed Valhalla begins with players taking control of Eivor as a child during a feast. 
+			It’s clear from the start that Eivor is the son of a Jarl, a chieftain. Unfortunately, the feast is interrupted by an attack from the rogue Viking warlord, Kjotve the Cruel.
+			</p>
+			
+			<!--Here we have an image for the game Assassins Creed Valhalla-->
+				<div>
+					<img src = "ass-creed-valhalla.jpg" alt = "Image of Assassins Creed Valhalla" class = "image-Valhalla">
+				</div>
+			<!--I love <div>'s-->	
+			<h3><em> Image of Assassins Creed Valhalla </em></h3>
+			
+			<!--This is an unordered list about some weapons that can be found in the game-->
+			<p class = "Unordered-list-1"> Weapons include: 
+				<ul>
+					<li> Air Rifle </li>
+					<li> Arrow </li>
+					<li> Machete </li>
+					<li> Metal Cestus </li>
+					<li> Bayonet </li>
+					<li> Longbow </li>
+					<li> Whip </li>
+					<li> Tomohawk </li>
+					<li> Labrys </li>
+					<li> Kara </li>
+					<li> Kukri </li>
+				</ul>
+				
+			</p>
+			<!--This list is some of the locations that the games take place in -->
+			<p class = "Unorderd-list-2"> Locations Include: 
+				<ul class = "ULitems">
+					<li> Asgard </li>
+					<li> Helheim </li>
+					<li> Hurgheim </li>
+					<li> UnderWorld </li>
+					<li> Burgh Castle </li>
+					<li>Jötunheimr </li>
+				</ul>
+			</p>
+			<!-- We made this an ordered list because it's a ranking of the games in order of popularity according to a video game news site -->
+			<p class = "ordered-list"> Here are the top 5 most well-liked Assassins Creed games according to IGN:
+				<ol>
+					<li> Assassin's Creed: Black Flag</li>
+					<li> Assassin's Creed: Origins </li>
+					<li> Assassin's Creed: Odyssey </li>
+					<li> Assassin's Creed 2 </li>
+					<li> Assassin's Creed: Syndicate </li>
+				</ol>
+			</p>
+				<div>
+				<!--This is our image for Assassins Creed Odyssey-->
+					<img src = "ass-creed-odyssey.jpg" alt = "Image of Assassins Creed Odyssey" class = "image-Odyssey">
+				</div>	
+			<h3><em> Image of Assassins Creed Odyssey </em></h3>
+			
+			<!--Paragraph 2 talks about some of the other games in the series-->
+			<p class = "Paragraph2">	The more popular games of this series are Black Flag, Origins, and Odyssey. Black Flag Uses the DNA collected from Desmond Miles’s corpse. 
+			The plot is set in a fictional history of real-world occasions and takes after the millennia-old battle between the Professional killers, who battle to protect peace and free will, and the Templars, who crave peace through control. 
+			The surrounding story is set within the 21st century and portrays the player as an employee. The main story is set within the West Indies amid the Brilliant Age of Robbery from 1715 to 1722 and takes after notorious Welsh privateer Edward Kenway, granddad and father of Assassin's Statement of faith III her Ratonhnhaké. 
+			Origins is a  prequel to the Assassin's Ideology Establishment set in Egypt from 48 BC where Bayek, a Medjay, starts the establishment of the Assassin's Brotherhood. 
+			This diversion rotates around a hero Bayek of Siwa who seeks revenge for his son's death. He wishes that killing the executioner will bring his son's soul to peace. 
+			While the act of revealing the plot Bayek takes the help of a few extraordinary authentic figures like Caesar, and Cleopatra and makes a difference to achieve the position of royalty with the assistance of his spouse Aya. 
+			Between these incorporates an overwhelming act of drama, sympathy, and heroism. 
+			And at long last gets what they battled for and with the starting of Professional killers Ideology Brotherhood from where other arrangements of this establishment start. 
+			Odyssey tells a legendary history of the Peloponnesian War between Athens and Sparta from 431 to 422 BC. Players control a Straightforward hired fighter, who battles on both sides of the strife, as they endeavor to discover their family and kill the secretive Religion of Kosmos. 
+			The journey too proceeds with the story bend of Layla Hassan, a major character presented in Roots, who remembers the mercenary's recollections through the Ill will gadget as a portion of her endeavors to find an effective artifact for the sake of the Professional killer Brotherhood. 
+			Whereas most campaign missions take after the hired fighter as they rejoin their family and halt the Religion of Kosmos, extra questlines errand the players to defeat mystical animals from Atlantis and takedown cultists.
+			A bounty is set on the player character in the event that they commit wrongdoing such as taking or harming a blameless bystander in public. 
+			As with other Assassin's Ideology diversions, the player character is a master in free-running and can climb about all structures.
+			</p>
+			
+			<p>
+			<!--This is a feedback form that theoretically should send the response to my student email-->
+			<div class = "text-box">
+				<h4>
+					<label>Any Feedback? Let us know!</label>
+	
+					<input type = "text" placeholder = "Enter text here">
+					<!--This is the link to my email-->
+					<a href = "mailto:nmhudson0125@email.campbell.edu"> <input type = "submit" value = "Submit"/>
+					<input type = "reset" value = "Clear"/>
+				<h4>
+			</div>
+			</p>
+			<!--This is the hyperlink-->
+			<div class = "click-me">
+				Click the Image Below!!
+			</div>
+			<!-- This is our fancy link to the Assassins Creed wepage; We just repalced the text with a link to another image and made an image hyperlink-->
+			<div>
+				<a href = "https://www.ubisoft.com/en-us/game/assassins-creed"/><img src = "ass-creed-logo.png" class = "click-image"/>*
+			</div>
+			
+	<!--This is the end of the body section-->		
+	</body>
+</html>
+<!-- End of HTML document -->
