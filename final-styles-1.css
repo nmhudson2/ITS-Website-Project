@@ -1,0 +1,111 @@
+/* We have centered the h1 header */
+h1	{	position: relative;
+		font-family: Sans-Serif, Helvectica;
+		font-size: 3em;
+		color: red;
+text-align: center;}
+
+/*There is no need to change the position of the horizontal rule, and we left the rest of the code left-justified*/
+hr	{	z-index: 10;
+		margin-top: 30px;}
+/* We wanted the h2 header to be centered below the hr. We chose red because it matches with the Assassins creed theme. */		
+h2	{	position: relative;
+		z-index: 11;
+		font-family: Sans-Serif, Helvectica;
+		font-size: 1em;
+		color: red;
+		text-align: center;}
+/* We only used the h3 header to decorate the images with a description beneath them. */	
+h3	{	position: relative;
+		z-index: 11;
+		/*There is no font-family tag here because the default fits the style better */
+		font-size: 1em;
+		color: red;
+		text-align: center;}
+
+/*This is the paragraph section. We center-aligned them because we believed it looked better than just having it be left centered.*/		
+.Paragraph1	{	z-index: 10;
+				font-family: Sans-Serif, Helvectica;
+				font-size: 1.1em;
+				text-align: left;
+				margin-left: 20px;
+				margin-right: 20px;}
+.Paragraph2	{	z-index: 10;
+				font-family: Sans-Serif, Helvectica;
+				font-size: 1.1em;
+				text-align: left;
+				margin-left: 20px;
+				margin-right: 20px;}
+/* nocoursehero */
+
+
+/*This is the CSS for the body. Originally, everything was in the body section so the formatting was weird, but by making everything else its own class we were able to make the sire more appealing.*/
+body	{ position: relative; 
+	      display: block;
+	      z-index: 1;
+		  background-color: silver;
+		  border-style: ridge;
+		  border-color: red;
+		  border-width: 20px;
+	      margin-bottom:0px;}
+		  
+		  
+/*This is the list section */		  
+.Unordered-list-1	{z-index: 1;
+					 display: block;
+					 position:relative;
+					 margin-left: 5px;}
+					 
+.Unorderd-list-2	{position:relative;
+					 margin-left: 5px}
+.ordered-list	{position: relative;
+				 margin-left: 5px;}
+/*We left the lists above left-aligned rather than center-aligned because the negative space made more sense that way. By adding a 5px margin, we helped create some space between the list titles and the body border. */
+					 
+
+				
+
+
+/*Image section below*/
+/* I used the W3 website to learn how to center the image. I was close, I just needed to know the correct syntax */
+/*All of the image attributes for the other images are the same as this one. Propably could have consolodated them into one class but we're addicted to making classes. */
+.image	{ display: block;
+		  z-index: 10;
+		  background-repeat: no-repeat;
+		  margin-left: auto;
+		  margin-right: auto;
+		   border-style: double;
+		  border-color: #615e54;
+		  border-width: 5px;}
+.image-Valhalla	{display: block;
+		  z-index: 10;
+		  background-repeat: no-repeat;
+		  margin-left: auto;
+		  margin-right: auto;
+		   border-style: double;
+		  border-color: #615e54;
+		  border-width: 5px;
+		  margin-top: 20px}
+		  
+.image-Odyssey {display: block;
+		  z-index: 10;
+		  background-repeat: no-repeat;
+		  margin-left: auto;
+		  margin-right: auto;
+		   border-style: double;
+		  border-color: #615e54;
+		  border-width: 5px;
+		  }
+
+	 
+.click-image {display: block;
+		  z-index: 10;
+		  background-repeat: no-repeat;
+		  margin-left: auto;
+		  margin-right: auto;
+		  max-height: 15em;
+		  max-width: 15em;}
+		  
+.click-me	{font-size: 1em;
+			 text-align: center;
+			 color:#af30bf }
