@@ -67,7 +67,7 @@ body	{ position: relative;
 
 
 /*Image section below*/
-/* I used the W3 website to learn how to center the image. I was close, I just needed to know the correct syntax */
+/* I used the W3 website to learn how to center the image. I was close, I just needed to know the correct syntax: link is https://www.w3schools.com/howto/howto_css_image_center.asp */
 /*All of the image attributes for the other images are the same as this one. Propably could have consolodated them into one class but we're addicted to making classes. */
 .image	{ display: block;
 		  z-index: 10;
